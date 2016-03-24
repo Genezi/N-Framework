@@ -1,0 +1,2 @@
+RewriteEngine ON
+RewriteRule ^module-a modules/module-a/index.php
