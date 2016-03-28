@@ -6,10 +6,12 @@
  * @version 0.1.1
  *
  **/
-class AbstractView{
+abstract class AbstractView{
 
     protected $diccionario = "";
     protected $modulo = "";
+
+    abstract protected function getView();
 
     protected function getTemplate($view){
         // REVISION

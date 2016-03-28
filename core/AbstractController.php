@@ -1,10 +1,11 @@
 <?php
 abstract  class AbstractController{
 
+    abstract protected function loadAbsClass();
+    
+    abstract protected function onEventHandler();
 
-    abstract function onEventHandler();
-
-    abstract function index();
+    abstract protected function index();
 
     protected function helperData(){
         $datos['post'] = array();
@@ -30,4 +31,5 @@ abstract  class AbstractController{
         }
         return $event;
     }
+    
 }
