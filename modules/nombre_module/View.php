@@ -2,10 +2,10 @@
 
 require_once ROOT.'core/AbstractView.php';
 
-class ViewModuleA extends AbstractView{
+class View extends AbstractView{
 
     function __construct(){
-        $this->setModule(MODULO_A);
+        $this->setModule(NOMBRE_MODULE);
         $diccionario = array(
             'DATES'=>array(
                 'TITLE'=>'N-FRAMEWORK',

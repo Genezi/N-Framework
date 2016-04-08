@@ -2,6 +2,6 @@
 
 require_once ROOT.'core/AbstractModel.php';
 
-class ModelModuleA extends AbstractModel{
+class Model extends AbstractModel{
 
 }

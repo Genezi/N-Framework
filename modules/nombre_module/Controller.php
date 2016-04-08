@@ -1,11 +1,11 @@
 <?php
 
-require_once '../../core/constants/ConstantsModuleA.php';
+require_once '../../core/constants/constans_nombre_module.php';
 require_once(ROOT.'core/AbstractController.php');
 require_once 'Model.php';
 require_once 'View.php';
 
-class ControllerModuleA extends AbstractController{
+class Controller extends AbstractController{
     
     private $postData;
 
@@ -18,12 +18,12 @@ class ControllerModuleA extends AbstractController{
     private $dictionaryViews;
 
     private function helperObjectModel(){
-        $model = new ModelModuleA();
+        $model = new Model();
         return $model;
     }
 
     private function  helperObjectView(){
-        $view = new ViewModuleA();
+        $view = new View();
         return $view;
     }
 
@@ -36,23 +36,17 @@ class ControllerModuleA extends AbstractController{
 
     public function onEventHandler(){
         $this->loadAbsClass();
-        $this->dictionaryViews = array(VIEW_CONTACTO=>'contacto');
-        $event = $this->getEvent($this->dictionaryViews,MODULO_A);
+        $this->dictionaryViews = array(/*Lista de vistas definidas en constantes dl modulo*/);
+        $event = $this->getEvent($this->dictionaryViews,NOMBRE_MODULE);
         $tmpl = call_user_func('ControllerModuleA::'.$event);
         return $tmpl;
     }
     public function index(){
         $data = array('NAME'=>'MVC','POLO'=>'N-FRAMEWORK');
-        $file = array('HEADER_FILE'=>'header');
+        $file = array();
         $html = $this->view->getView($data,$file);
         return $html;
     }
-
-    public function contacto(){
-        $data = array('NAME'=>'MVC','POLO'=>'N-FRAMEWORK');
-        $file = array('HEADER_FILE'=>'contacto');
-        $html = $this->view->getView($data,$file);
-        return $html;
-    }
+    
 
 }
