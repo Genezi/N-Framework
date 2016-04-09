@@ -2,23 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fd3e2cbb-ec39-4fa2-9dcf-b4954e7c37fd" name="Default" comment="Agregue directorio site_media -&gt; css , js , tmpl al proyecto">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/nombre_module/Controller.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/nombre_module/Model.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/nombre_module/View.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/nombre_module/index.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modules/ModuleA/Controller.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modules/ModuleA/Model.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modules/ModuleA/View.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modules/ModuleA/index.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modules/moduleB/Controller.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modules/moduleB/Model.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modules/moduleB/View.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/modules/moduleB/index.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/site_media/tmpl/moduleA/modulea_contacto.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/site_media/tmpl/moduleA/modulea_header.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/core/constants/ConstantsModuleA.php" afterPath="$PROJECT_DIR$/core/constants/constans_nombre_module.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/core/constants/ConstantsRootRuta.php" afterPath="$PROJECT_DIR$/core/constants/constants_root_ruta.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/site_media/tmpl/moduleA/modulea_template.html" afterPath="$PROJECT_DIR$/site_media/tmpl/nombre_module/nombre_module_template.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="N Framework.iws" />
@@ -71,7 +54,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="constans_nombre_module.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="constans_nombre_module.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/constants/constans_nombre_module.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="176">
@@ -81,7 +64,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Controller.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Controller.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/nombre_module/Controller.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="198">
@@ -408,7 +391,7 @@
       <workItem from="1459531210299" duration="3128000" />
       <workItem from="1459975993290" duration="2336000" />
       <workItem from="1460126824770" duration="4584000" />
-      <workItem from="1460150974111" duration="2907000" />
+      <workItem from="1460150974111" duration="3345000" />
     </task>
     <task id="LOCAL-00001" summary="Agregue directorio site_media -&gt; css , js , tmpl al proyecto">
       <created>1458796308440</created>
@@ -421,10 +404,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39824000" />
+    <option name="totallyTimeSpent" value="40262000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21815519" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -795,14 +778,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/constants/constans_nombre_module.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/constants/constants_root_ruta.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -865,6 +840,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/constants/constans_nombre_module.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>
