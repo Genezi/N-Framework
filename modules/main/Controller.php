@@ -38,7 +38,7 @@ class Controller extends AbstractController{
         $this->loadAbsClass();
         $this->dictionaryViews = array(/*Lista de vistas definidas en constantes dl modulo*/);
         $event = $this->getEvent($this->dictionaryViews,NOMBRE_MODULE);
-        $tmpl = call_user_func('ControllerModuleA::'.$event);
+        $tmpl = call_user_func(get_class().'::'.$event);
         return $tmpl;
     }
     public function index(){

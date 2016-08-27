@@ -1,2 +1,2 @@
 RewriteEngine ON
-RewriteRule ^modulea modules/moduleA/index.php
+RewriteRule ^main modules/main/index.php

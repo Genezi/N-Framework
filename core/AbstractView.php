@@ -25,7 +25,7 @@ abstract class AbstractView{
         return $this->diccionario[$keyDiccionary];
     }
     protected function getTemplate($view){
-        $server = substr($_SERVER['DOCUMENT_ROOT'],0, -1);
+        $server = substr($_SERVER['DOCUMENT_ROOT'],0);
         $file = $server.RUTA."site_media/tmpl/".$this->modulo."/".$this->modulo."_".$view.".html";
         if($template = file_get_contents($file)) return $template;
         return "Error al cargar template";
