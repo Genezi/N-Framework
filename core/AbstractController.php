@@ -12,7 +12,7 @@ abstract  class AbstractController{
         if(isset($_POST)){
             $datos['post'] = $_POST;
         }
-        return $datos;
+        return $datos['post'];
     }
     protected function helperFile(){
         $file['file'] = array();
@@ -26,8 +26,11 @@ abstract  class AbstractController{
         $event = "index";
         $uri = $_SERVER['REQUEST_URI'];
         foreach ($eventos as $keyEvent => $evento){
-            $uri_event = $modulo.$evento."/";
-            if(strpos($uri,$uri_event) == True) $event = $keyEvent;
+            $uri_event = $modulo.$evento;
+            if(strpos($uri,$uri_event) == True){
+                $event = $keyEvent;
+                break;
+            }
         }
         return $event;
     }

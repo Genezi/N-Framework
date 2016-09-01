@@ -12,17 +12,14 @@ abstract class AbstractModel{
      * 
      **/
     private static $hostName = "localhost";
-    protected $dbName = "tienda_online";
+    protected $dbName = "";
     private static $dbUser = "root";
     private static $dbPassword = "";
     private $driver = "mysql";
     private $dbPort = "3306";
     protected $lastId = 0 ;
     protected $countRows = 0;
-    protected $query = "UPDATE `pedidos` SET `id_cliente`= ? ,`fecha`= ? ,`estado`= ? WHERE id_pedido = 10";
-    //"INSERT INTO `pedidos`(`id_cliente`, `fecha`, `estado`)
-    //VALUES (? , ? , ?)";
-    //"SELECT * FROM niveles";//"INSERT INTO niveles (descripcion_nv) VALUES (1)";
+    protected $query = "";
     protected $rows = array();
     private $pdo;
     private $prepare;
@@ -43,6 +40,10 @@ abstract class AbstractModel{
      **/
     protected function setDbName($db){
         $this->dbName = $db;
+    }
+
+    protected function setQuery($query){
+        $this->query = $query;
     }
     /**
      * Estable el puerto de conexion al motor de base de datos
