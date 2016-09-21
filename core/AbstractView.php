@@ -44,4 +44,17 @@ abstract class AbstractView{
         }
         return $tmpl;
     }
+    protected function clearKeyWords($tmpl){
+        $countChar = substr_count($tmpl,'{');
+        $c = 0;
+        while($c <= $countChar){
+            $iniChar = strpos($tmpl,'{') + 1;
+            $endChar = strpos($tmpl,'}');
+            $lentChar =  $endChar - $iniChar;
+            $key = substr($tmpl,$iniChar,$lentChar);
+            $tmpl = str_replace('{'.$key.'}','',$tmpl);
+            $c++;
+        }
+        return $tmpl;
+    }
 }
